@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <div>
+            <input type="checkbox" name="cold"/>
+            <label for="cold">콜드 브루 커피</label>
+        </div>
+        <div>
+            <input type="checkbox" name="brewed"/>
+            <label for="brewed">브루드 커피</label>
+        </div>
+        <div>
+            <input type="checkbox" name="espre"/>
+            <label for="espre">에스프레소</label>
+        </div>
+        <button type="submit">선택</button>
+    </form>
+</body>
+</html>
