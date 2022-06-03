@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    {% for drink in drinks %}
-        <h1>{{ drink }}</h1>
-    {% endfor %}
-</body>
-</html>
+{% extends 'choose.html' %}
+
+{% block content %}
+    {% if drinks %}
+        {% for drink in drinks %}
+            <p>{{ drink.drink }}</p>
+        {% endfor %}
+    {% endif %}
+{% endblock %}
