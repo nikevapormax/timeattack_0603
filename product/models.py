@@ -16,3 +16,4 @@ class Drink(models.Model):
 
     drink = models.CharField(max_length=50)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    image = models.CharField(max_length=200, default='')
