@@ -4,6 +4,7 @@
     {% if drinks %}
         {% for drink in drinks %}
             <p>{{ drink.drink }}</p>
+            <img class="coffee-image" src="{{ drink.image }}" alt="" width="300px" height="313px">
         {% endfor %}
     {% endif %}
 {% endblock %}
